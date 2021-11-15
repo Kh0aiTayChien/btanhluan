@@ -1756,7 +1756,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close" aria-hidden="true"></span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ti-close" aria-hidden="true" id="myBtn"></span></button>
                 </div>
                 <div class="modal-body">
                     <div class="row no-gutters">
@@ -1863,4 +1863,7 @@
         </div>
     </div>
     <!-- Modal end -->
+
+
+
 @endsection

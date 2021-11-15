@@ -21,7 +21,9 @@
                             <li><i class="ti-location-pin"></i> Store location</li>
                             <li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
                             <li><i class="ti-user"></i> <a href="#">My account</a></li>
-                            <li><i class="ti-power-off"></i><a href="login.html#">Login</a></li>
+                            <li><a href="#login" class="nav-link" data-toggle="modal"><i class="fa fa-sign-in"></i> Login</a></li>
+                            <li><a href="#register" class="nav-link" data-toggle="modal"><i class="fa fa-user-plus"></i> Register</a></li>
+
                         </ul>
                     </div>
                     <!-- End Top Right -->

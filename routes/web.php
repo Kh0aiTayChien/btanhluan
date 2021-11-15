@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
 Route::prefix('carts')->group(function () {
     Route::get('/', [CartController::class, 'index'])->name('cart.index');
@@ -52,11 +52,12 @@ Route::middleware('checkLogin')->group(function () {
     });
 });
 });
-
+Route::post('/',[\App\Http\Controllers\UserRegistrationController::class,"store"])->name('register');
 
 Route::get('/login', function () {
     return view('login');
 })->name('showFormLogin');
+
 
 Route::post('/login', function (\Illuminate\Http\Request $request) {
     $username = $request->username;
